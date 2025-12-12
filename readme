@@ -1,0 +1,31 @@
+# Movemais
+
+**Movemais** é um site de mobilidade integrada, sem login obrigatório, que permite explorar destinos acessíveis a partir de uma origem, com filtros de tempo, preço e tipo de destino.
+
+## ✨ Funcionalidades
+- Escolha da **origem** e **data** da viagem
+- Filtros de **tempo máximo**, **orçamento máximo** e **tipo de destino**
+- Lista de destinos mockados (Porto, Coimbra, Nazaré, Lisboa, Viseu)
+- Interface responsiva e leve
+
+## 🚀 Como acessar
+O site está publicado via GitHub Pages:  
+👉 [Movemais no GitHub Pages](https://kelmatts7-commits.github.io/movemais)
+
+## 📦 Estrutura do projeto
+- `index.html` → página principal
+- `styles.css` → estilos visuais
+- `data.json` → dados mockados de destinos
+- `app.js` → lógica de filtros e renderização
+
+## ⚖️ Aviso legal
+Este projeto é experimental e informativo.  
+- Não vende bilhetes diretamente.  
+- Links externos (Omio, CP, Rede Expressos, Flixbus) são responsabilidade das próprias plataformas.  
+- Horários e preços exibidos são simulados e podem não refletir valores reais.  
+
+## 💡 Próximos passos
+- Adicionar links diretos para plataformas de transporte (Omio, CP, Rede Expressos, Flixbus)  
+- Criar página de **Termos & Condições**  
+- Evoluir para integração com APIs oficiais (quando disponível)  
+- Melhorar design e experiência do usuário
