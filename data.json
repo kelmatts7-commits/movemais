@@ -1,0 +1,47 @@
+[
+  {
+    "destino": "Porto",
+    "meio": "comboio",
+    "tempo_h": 1,
+    "preco_min": 6.5,
+    "simbolo": "🎭",
+    "tipo": "cultural",
+    "origens": ["Aveiro", "Coimbra", "Lisboa"]
+  },
+  {
+    "destino": "Coimbra",
+    "meio": "comboio",
+    "tempo_h": 1,
+    "preco_min": 8,
+    "simbolo": "📚",
+    "tipo": "historico",
+    "origens": ["Aveiro", "Porto", "Lisboa"]
+  },
+  {
+    "destino": "Nazaré",
+    "meio": "autocarro",
+    "tempo_h": 3,
+    "preco_min": 16,
+    "simbolo": "🌊",
+    "tipo": "praia",
+    "origens": ["Aveiro", "Coimbra", "Lisboa"]
+  },
+  {
+    "destino": "Lisboa",
+    "meio": "comboio",
+    "tempo_h": 2.5,
+    "preco_min": 18,
+    "simbolo": "🏰",
+    "tipo": "capital",
+    "origens": ["Aveiro", "Coimbra", "Porto"]
+  },
+  {
+    "destino": "Viseu",
+    "meio": "autocarro",
+    "tempo_h": 2,
+    "preco_min": 14,
+    "simbolo": "🌳",
+    "tipo": "interior-verde",
+    "origens": ["Aveiro", "Coimbra", "Porto"]
+  }
+]
