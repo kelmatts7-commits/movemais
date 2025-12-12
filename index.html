@@ -1,10 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Movemais</title>
-  </head>
-  <body>
-    <h1>Olá, mundo!</h1>
-    <p>Primeiro passo do nosso site de mobilidade integrada.</p>
-  </body>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Movemais | Explorar destinos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Explorar destinos</h1>
+    <p class="subtitle">Origem + data → destinos acessíveis com preço e tempo</p>
+  </header>
+
+  <main class="container">
+    <section class="search">
+      <label class="label">Origem</label>
+      <input id="origin" type="text" placeholder="Aveiro" value="Aveiro" />
+
+      <label class="label">Data</label>
+      <input id="date" type="date" />
+
+      <button id="exploreBtn">Explorar destinos</button>
+    </section>
+
+    <section class="results">
+      <div id="stats" class="stats"></div>
+
+      <div class="filters">
+        <div class="filter-group">
+          <label>Tempo máximo (horas)</label>
+          <input id="maxTime" type="number" min="1" max="10" value="4" />
+        </div>
+        <div class="filter-group">
+          <label>Orçamento máximo (€)</label>
+          <input id="maxPrice" type="number" min="5" max="200" value="30" />
+        </div>
+        <div class="filter-group">
+          <label>Tipo de destino</label>
+          <select id="type">
+            <option value="">Todos</option>
+            <option value="praia">Praia</option>
+            <option value="cidade-media">Cidade média</option>
+            <option value="interior-verde">Interior verde</option>
+            <option value="capital">Capital</option>
+            <option value="cultural">Cultural</option>
+            <option value="historico">Histórico</option>
+          </select>
+        </div>
+      </div>
+
+      <ul id="list" class="list"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Movemais – mobilidade integrada. Sem login obrigatório.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
 </html>
