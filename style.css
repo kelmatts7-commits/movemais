@@ -1,0 +1,103 @@
+:root {
+  --bg: #f7f7f8;
+  --text: #1a1a1a;
+  --muted: #666;
+  --card: #ffffff;
+  --border: #e6e6e8;
+  --accent: #2a7ade;
+  --green: #2a9d8f;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.header {
+  padding: 32px 20px;
+  text-align: center;
+}
+.header h1 { margin: 0; font-weight: 700; }
+.subtitle { margin: 8px 0 0; color: var(--muted); }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.search, .results {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.label { display: block; margin: 8px 0 6px; font-weight: 600; }
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 16px;
+}
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover { opacity: 0.95; }
+
+.stats {
+  padding: 10px 12px;
+  background: #f3f7ff;
+  border: 1px solid #e5efff;
+  border-radius: 10px;
+  color: #2d4c9f;
+  margin-bottom: 12px;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.filter-group label { font-size: 14px; color: var(--muted); margin-bottom: 6px; display: block; }
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.item {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 80px;
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.item:last-child { border-bottom: none; }
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #eef6ff;
+  border: 1px solid #dbe9ff;
+  font-size: 13px;
+  color: #2a5bd7;
+}
+.symbol { font-size: 20px; }
+.mode { color: var(--muted); font-size: 14px; }
+
+@media (max-width: 720px) {
+  .filters { grid-template-columns: 1fr; }
+  .item { grid-template-columns: 1fr; gap: 6px; }
+}
